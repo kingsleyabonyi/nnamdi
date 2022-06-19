@@ -8,10 +8,19 @@ body{
     width: 50%;
     margin: auto;
     min-height: 100vh;
-     background-color: #ff7a76;
-    background-image:url("bg-intro-desktop.png");
+    background-color: #ff7a76;
+    background-image:url("bg-intro-mobile.png");
+     
+}
+
+@media (max-width: 650px) {
+    body{
+        background-color: #ff7a76;
+        background-image:url("bg-intro-mobile.png");
+        width: 50%;
+        height: auto;
     
-    
+    }
 }
 .first{
     margin-top: 10px;
@@ -54,6 +63,9 @@ body{
     align-items: center;
 
 }
+.error-icon{
+    display: none;
+}
 main .right-item .top-click{
     margin-left: 200px;
     width: 300px;
@@ -73,14 +85,7 @@ button{
     border-radius: 5px;
     color: white;
 }
-@media (max-width:650px) {
-    body{
-        height: 100%;
-        width: 100%;
-        background-image: url(bg-intro-mobile.png);
-    }
-    
-}
+
 form p{
     font-size: 12px;
     float: right;
