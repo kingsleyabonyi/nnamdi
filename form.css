@@ -1,0 +1,107 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 50%;
+    margin: auto;
+    min-height: 100vh;
+    background-color: #ff7a76;
+    background-image:url("bg-intro-mobile.png");
+     
+}
+
+@media (max-width: 650px) {
+    body{
+        background-color: #ff7a76;
+        background-image:url("bg-intro-mobile.png");
+        width: 50%;
+        height: auto;
+    
+    }
+}
+.first{
+    margin-top: 10px;
+}
+.wrapper{
+    display: flex;
+    min-width: 50%;
+    max-height:50vh ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 
+
+}
+.right-item{
+    width: 50%;
+    align-items: center;
+    
+}
+.right-item .top{
+    background-color: blue;
+    width: 380px;
+    margin-left: 5px;
+    color: white;
+}
+
+.right-item input{
+    display: block;
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.left-item{
+    margin-right: 20px;
+    color: white;
+    padding: 10px;
+    display: inline;
+    float: left;
+    align-items: center;
+
+}
+.error-icon{
+    display: none;
+}
+main .right-item .top-click{
+    margin-left: 200px;
+    width: 300px;
+    background-color: blue;
+}
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+button{
+    margin-left: 10px;
+    width: 325px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+form p{
+    font-size: 12px;
+    float: right;
+    display: none;
+    color: red;
+}
+form .para{
+    font-size: 12px;
+    float: right;
+    display: contents;
+    color: black;
+}
+form span{
+    color: red;
+}
+.down-click:hover ~ input:invalid{
+border-color: red;
+background: url(icon-error.svg);
+}
